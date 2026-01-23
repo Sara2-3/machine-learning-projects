@@ -11,8 +11,17 @@ Each folder serves a specific purpose in the data science lifecycle, making it e
 ---
 
 ## Project Structure
-
-├── data/ # Datasets and raw data ├── data-science-analysis/ # Exploratory analysis and visualizations ├── data-preprocessing/ # Data cleaning and transformation ├── core-ml/ # Traditional Machine Learning models │ ├── supervised/ # Supervised Learning │ │ ├── regression/ # Regression models │ │ └── classification/ # Classification models │ └── unsupervised/ # Unsupervised Learning (clustering, dimensionality reduction) └── deep-learning/ # Deep Learning architectures ├── fundamentals/ # Neural network basics ├── mlp/ # Multi-Layer Perceptron ├── cnn/ # Convolutional Neural Networks └── [future architectures]/ # RNN, LSTM, Transformers, etc.
+├── data/                          # Datasets and raw data, Exploratory analysis and visualizations ,Data cleaning and transformation
+├── core-ml/                       # Traditional Machine Learning models
+│   ├── supervised/                # Supervised Learning
+│   │   ├── regression/           # Regression models
+│   │   └── classification/       # Classification models
+│   └── unsupervised/             # Unsupervised Learning (clustering, dimensionality reduction)
+└── deep-learning/                 # Deep Learning architectures
+    ├── fundamentals/              # Neural network basics
+    ├── mlp/                       # Multi-Layer Perceptron
+    ├── cnn/                       # Convolutional Neural Networks
+    └── [future architectures]/    # RNN, LSTM, Transformers, etc.
 
 
 ---
