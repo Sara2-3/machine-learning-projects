@@ -104,4 +104,4 @@ cd [repository-name]
 pip install -r requirements.txt
 
 Contact
-Sara Resulaj sararesulaj40@gmail.com# machine-learning-projects
+Sara Resulaj sararesulaj40@gmail.com

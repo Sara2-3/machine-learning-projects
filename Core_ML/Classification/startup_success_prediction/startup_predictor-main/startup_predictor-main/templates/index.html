@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Startup Success Predictor</title>
+
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='logo.png') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-inner">
+
+        <div class="brandline">
+          <img class="brand-logo" src="{{ url_for('static', filename='logo.png') }}" alt="Startup Predictor logo">
+          <div class="brandtext">
+            <div class="brandname">Startup Success Predictor</div>
+            <div class="brandtag">Feel the startup pulse</div>
+          </div>
+        </div>
+
+        <h1 class="title">Predict how likely a startup is to get acquired</h1>
+        <p class="subtitle">
+          This web app turns a few key startup signals (age, strategic relationships, and funding milestones)
+          into a clear probability score, so you can quickly compare scenarios and understand what drives the outcome.
+        </p>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-top">What you enter</div>
+            <div class="stat-val">Category, region, age, relationships</div>
+          </div>
+          <div class="stat">
+            <div class="stat-top">Funding signals</div>
+            <div class="stat-val">VC, Angel, Series A, Top 500</div>
+          </div>
+          <div class="stat">
+            <div class="stat-top">What you get</div>
+            <div class="stat-val">Success probability + risk level</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-media" aria-hidden="true">
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <div>
+          <h2 class="panel-title">Run a prediction</h2>
+          <p class="panel-lead">Fill the fields and click Predict to see the result instantly.</p>
+        </div>
+        <div class="chip">v-KESM</div>
+      </div>
+
+      <form id="predict-form">
+        <div class="form-grid">
+
+          <div class="form-group">
+            <label for="category">Primary Category</label>
+            <select id="category" required>
+              <option value="ecommerce">E-commerce</option>
+              <option value="software" selected>Software</option>
+              <option value="web">Web</option>
+              <option value="mobile">Mobile</option>
+              <option value="enterprise">Enterprise</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="state">State / Region</label>
+            <select id="state" required>
+              <option value="CA">California</option>
+              <option value="NY">New York</option>
+              <option value="MA">Massachusetts</option>
+              <option value="TX">Texas</option>
+              <option value="other" selected>Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="startup_age">Startup Age (years)</label>
+            <input type="number" id="startup_age" min="0" step="1" required placeholder="e.g. 3">
+          </div>
+
+          <div class="form-group">
+            <label for="relationships">Strategic Relationships</label>
+            <input type="number" id="relationships" min="0" step="1" required placeholder="e.g. 12">
+          </div>
+
+          <fieldset class="amenities form-group-full">
+            <legend>Investment Indicators</legend>
+            <div class="amenities-list horizontal">
+              <label><input type="checkbox" id="has_vc"> VC Funding</label>
+              <label><input type="checkbox" id="has_angel"> Angel Investment</label>
+              <label><input type="checkbox" id="has_series_a"> Series A Funding</label>
+              <label><input type="checkbox" id="is_top500"> Top 500 Startup</label>
+            </div>
+          </fieldset>
+
+          <div class="form-group-full">
+            <button type="submit" class="btn-primary" id="predict-btn">Predict Success</button>
+          </div>
+
+        </div>
+      </form>
+
+      <div id="result" class="result result-placeholder">
+        Get the results.
+      </div>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
