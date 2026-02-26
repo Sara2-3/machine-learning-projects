@@ -1,4 +1,4 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:C96B9E,50:E8907C,100:F0B060&height=180&section=header&text=Rock%20Paper%20Scissors%20AI&fontSize=45&fontColor=fff&animation=twinkling&fontAlignY=38&desc=CNN%20Image%20Classifier%20%2B%20Interactive%20Game&descAlignY=58&descSize=18&descColor=ffffff"/>
+# Rock Paper Scissors — CNN Image Classifier
 
 ## Overview
 
@@ -88,12 +88,6 @@ streamlit run streamlit_app_clean.py
 
 ## Tech Stack
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-27338e?style=for-the-badge&logo=OpenCV&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+Python, TensorFlow, Keras, OpenCV, Streamlit, Scikit-Learn, NumPy
 
 ---
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:C96B9E,50:E8907C,100:F0B060&height=100&section=footer&animation=twinkling"/>
